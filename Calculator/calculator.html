@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <section class="calculator">
+        <h1>Calculator</h1>
+        <form>
+            
+            <input type="text" class="screen" id="result">
+        </form>
+        <div class="keys">
+            <input type="button" value="/" class=" button operator" onClick="display('/')"></input>
+            <input type="button" value="*" class=" button operator" onClick="display('*')"></input>
+            <input type="button" value="+" class=" button operator" onClick="display('+')"></input>
+            <input type="button" value="-" class=" button operator" onClick="display('-')"></input>      
+            
+            <input type="button" value="9" class="button" onClick="display('9')"></input>      
+            <input type="button" value="8" class="button" onClick="display('8')"></input>
+            <input type="button" value="7" class="button" onClick="display('7')"></input>    
+            <input type="button" value="6" class="button" onClick="display('6')"></input>        
+            <input type="button" value="5" class="button" onClick="display('5')"></input>
+            <input type="button" value="4" class="button" onClick="display('4')"></input>               
+            <input type="button" value="3" class="button" onClick="display('3')"></input>
+            <input type="button" value="2" class="button" onClick="display('2')"></input>     
+            <input type="button" value="1" class="button" onClick="display('1')"></input>          
+            <input type="button" value="0" class="button" onClick="display('0')"></input>
+            <input type="button" value="." class="button" onClick="display('.')"></input>
+        
+            <input type="button" value = "=" class="button equal-sign" onClick="solve()"></input>
+            <input type='button' value = 'C' onclick="document.getElementById('result').value=''" class="clear button "/>
+        
+            
+        
+        </div> 
+
+        
+    </section>
+    
+
+    <script src="sample.js"></script>
+
+</body>
+
+</html>
